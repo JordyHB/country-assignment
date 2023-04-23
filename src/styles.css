@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 main
+        4.3 country tile
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: clamp(14px, 1vw, 16px)
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(3rem, 5vw, 6rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 1.25vw, 1.5rem);
+    font-weight: 400;
+}
+
+.country-name {
+    font-family: 'Poppins', sans-serif;
+}
+
+.europe {
+    color: yellow;
+}
+
+.africa {
+    color: blue;
+}
+
+.americas {
+    color: green;
+}
+
+.asia {
+    color: red;
+}
+
+.oceania {
+    color: purple;
+}
+
+.antarctic {
+    color: orange;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+}
+/* --------------- 4.2 main ------------------- */
+
+.world-map {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.country-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    background-color: lightgrey;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    padding: 2rem 1.5rem;
+    margin: 2rem 3rem;
+
+}
+
+/* --------------- 4.3 country tile ------------------- */
+
+.country-tile {
+    display: flex;
+    flex-direction: column;
+    width: clamp(14rem, 25vw, 60rem);
+
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.flag-wrapper {
+    flex: 0 1 3rem;
+    max-height: 2.25rem;
+    margin-right: 1rem;
+}
+
+.flag {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+}
+
+.country-name {
+    align-self: flex-end;
+}
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (min-width: 992px) {
+
+    .country-section {
+        margin: 2rem 6rem;
+    }
+
+    .map-section {
+        align-items: center;
+        width: 80vw;
+        height: 72vh;
+    }
+
+    .world-map {
+        max-height: 100%;
+    }
+
+}
