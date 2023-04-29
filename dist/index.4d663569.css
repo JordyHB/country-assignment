@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 500;
+}
+
+h1 {
+  font-family: Caveat, cursive;
+  font-size: clamp(3rem, 5vw, 6rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.25vw, 1.5rem);
+  font-weight: 400;
+}
+
+.country-name {
+  font-family: Poppins, sans-serif;
+}
+
+.europe {
+  color: #ff0;
+}
+
+.africa {
+  color: #00f;
+}
+
+.americas {
+  color: green;
+}
+
+.asia {
+  color: red;
+}
+
+.oceania {
+  color: purple;
+}
+
+.antarctic {
+  color: orange;
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+
+.world-map {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.country-section {
+  background-color: #d3d3d3;
+  border: 1px solid #789;
+  border-radius: 4px;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  margin: 2rem 3rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+}
+
+.country-tile {
+  width: clamp(14rem, 25vw, 60rem);
+  flex-direction: column;
+  display: flex;
+}
+
+.name-container {
+  flex-direction: row;
+  flex: 0 2.25rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.flag-wrapper {
+  max-height: 2.25rem;
+  flex: 0 3rem;
+  margin-right: 1rem;
+}
+
+.flag {
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+}
+
+.country-name {
+  align-self: flex-end;
+}
+
+@media screen and (width >= 992px) {
+  .country-section {
+    margin: 2rem 6rem;
+  }
+
+  .map-section {
+    width: 80vw;
+    height: 72vh;
+    align-items: center;
+  }
+
+  .world-map {
+    max-height: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
